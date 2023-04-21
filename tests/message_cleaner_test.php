@@ -58,3 +58,4 @@ class local_messagecleaner_message_cleaner_testcase extends advanced_testcase {
         $DB->insert_record('messages', $record);
     }
 }
+?>

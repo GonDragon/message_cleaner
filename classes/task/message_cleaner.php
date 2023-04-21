@@ -35,36 +35,15 @@ class message_cleaner extends \core\task\scheduled_task {
      * @return string
      */
     public function get_name() {
-        return get_string('messageCleaner', 'local_messagecleaner');
+        return get_string('messagecleaner', 'local_messagecleaner');
     }
 
     /**
      * Execute the task.
      */
     public function execute() {
-        global $DB;
-    
-        // Calculate the timestamp for messages older than 6 months
-        $sixMonthsAgo = time() - (6 * 30 * 24 * 60 * 60);
-    
-        // Retrieve private messages older than 6 months
-        $sql = "SELECT id
-                FROM {messages}
-                WHERE timecreated < :sixmonthsago";
-        $params = array('sixmonthsago' => $sixMonthsAgo);
-        $oldMessages = $DB->get_records_sql($sql, $params);
-    
-        // Load messaging API functions
-        require_once($CFG->dirroot . '/message/lib.php');
-    
-        // Delete each old private message
-        foreach ($oldMessages as $oldMessage) {
-            message_delete_message($oldMessage, true); // The second parameter is "fulldelete"
-        }
-    
-        // Log the task completion
-        $messageAmount = count($oldMessages);
-        mtrace(get_string('deleted_messages', 'local_messagecleaner'));
+        delete_old_messages();
     }
     
 }
+?>

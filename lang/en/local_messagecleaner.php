@@ -22,5 +22,5 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['messageCleaner'] = 'Message Cleaner';
+$string['messagecleaner'] = 'Message Cleaner';
 $string['deleted_messages'] = 'Deleted {$messageAmount} private messages older than 6 months';

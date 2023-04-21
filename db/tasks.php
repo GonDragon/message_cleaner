@@ -24,14 +24,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$tasks = [
-    [
-        'classname' => 'local_messagecleaner\task\message_cleaner',
-        'blocking' => 0,
-        'minute' => '0',
-        'hour' => '2',
-        'day' => '*',
-        'month' => '*',
-        'dayofweek' => '6',
-    ],
-];
+$tasks = array(  
+    array(
+         'classname' => 'local_messagecleaner\task\message_cleaner', 
+         'blocking' => 0,
+         'minute' => '0',
+         'hour' => '2',
+         'day' => '*',
+         'dayofweek' => '6', 
+         'month' => '*'
+    )
+    );
+?>
