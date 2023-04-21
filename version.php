@@ -21,7 +21,8 @@
  * @author      2023 Gonzalo Romero <https://github.com/GonDragon>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-$defined('MOODLE_INTERNAL') || die();
+
+defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_messagecleaner';
 $plugin->release = 'v1.0.0';
