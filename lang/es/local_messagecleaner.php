@@ -22,5 +22,6 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['pluginname'] = 'Limpiador de Mensajes';
 $string['messagecleaner'] = 'Limpiador de Mensajes';
 $string['deleted_messages'] = 'Eliminados {$messageAmount} mensajes privados con más de 6 meses de antigüedad.';
