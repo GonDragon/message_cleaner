@@ -17,22 +17,21 @@
 /**
  * Provides meta-data about the plugin.
  *
- * @package     local_messagecleaner
+ * @package     local_message_cleaner
  * @author      2023 Gonzalo Romero <https://github.com/GonDragon>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$tasks = array(  
+$tasks = array(
     array(
-         'classname' => 'local_messagecleaner\task\message_cleaner', 
+         'classname' => 'local_message_cleaner\task\message_cleaner',
          'blocking' => 0,
          'minute' => '0',
          'hour' => '2',
          'day' => '*',
-         'dayofweek' => '6', 
+         'dayofweek' => '6',
          'month' => '*'
     )
     );
-?>

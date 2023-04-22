@@ -17,7 +17,7 @@
 /**
  * Provides meta-data about the plugin.
  *
- * @package     local_messagecleaner
+ * @package     local_message_cleaner
  * @author      2023 Gonzalo Romero <https://github.com/GonDragon>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -25,9 +25,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 function delete_old_messages()
-{           
+{
     global $DB;
-    
+
     // Calculate the timestamp for messages older than 6 months
     $sixMonthsAgo = time() - (6 * 30 * 24 * 60 * 60);
 
@@ -48,6 +48,5 @@ function delete_old_messages()
 
     // Log the task completion
     $messageAmount = count($oldMessages);
-    mtrace(get_string('deleted_messages', 'local_messagecleaner'));
+    mtrace(get_string('deleted_messages', 'local_message_cleaner'));
 }
-?>

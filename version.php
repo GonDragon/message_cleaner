@@ -17,13 +17,13 @@
 /**
  * Provides meta-data about the plugin.
  *
- * @package     local_messagecleaner
+ * @package     local_message_cleaner
  * @author      2023 Gonzalo Romero <https://github.com/GonDragon>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'local_messagecleaner';
+$plugin->component = 'local_message_cleaner';
 $plugin->release = 'v1.0.0';
 $plugin->version = 2023041800;

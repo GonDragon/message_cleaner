@@ -1,9 +1,9 @@
 <?php
 defined('MOODLE_INTERNAL') || die();
 
-use local_messagecleaner\task\message_cleaner;
+use local_message_cleaner\task\message_cleaner;
 
-class local_messagecleaner_message_cleaner_testcase extends advanced_testcase {
+class local_message_cleaner_message_cleaner_testcase extends advanced_testcase {
 
     public function test_execute() {
         global $DB;
@@ -58,4 +58,3 @@ class local_messagecleaner_message_cleaner_testcase extends advanced_testcase {
         $DB->insert_record('messages', $record);
     }
 }
-?>

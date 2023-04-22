@@ -17,12 +17,12 @@
 /**
  * Provides meta-data about the plugin.
  *
- * @package     local_messagecleaner
+ * @package     local_message_cleaner
  * @author      2023 Gonzalo Romero <https://github.com/GonDragon>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace local_messagecleaner\task;
+namespace local_message_cleaner\task;
 
 /**
  * An example of a scheduled task.
@@ -35,7 +35,7 @@ class message_cleaner extends \core\task\scheduled_task {
      * @return string
      */
     public function get_name() {
-        return get_string('messagecleaner', 'local_messagecleaner');
+        return get_string('message_cleaner', 'local_message_cleaner');
     }
 
     /**
@@ -44,6 +44,5 @@ class message_cleaner extends \core\task\scheduled_task {
     public function execute() {
         delete_old_messages();
     }
-    
+
 }
-?>

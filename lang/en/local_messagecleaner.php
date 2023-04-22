@@ -17,11 +17,11 @@
 /**
  * Provides meta-data about the plugin.
  *
- * @package     local_messagecleaner
+ * @package     local_message_cleaner
  * @author      2023 Gonzalo Romero <https://github.com/GonDragon>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['pluginname'] = 'Message Cleaner';
-$string['messagecleaner'] = 'Message Cleaner';
+$string['message_cleaner'] = 'Message Cleaner';
 $string['deleted_messages'] = 'Deleted {$messageAmount} private messages older than 6 months';
